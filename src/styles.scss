@@ -5,9 +5,19 @@ html {
 
 }
 body {
-  background-color: transparent;
+  background: #000000a8;
 }
 
 * {
-  color: #fff;
+  color: #cacaca;
+}
+.avatar {
+  height: 10em;
+  max-width: 10em;
+  border-radius: 50%;
+  overflow: hidden;
+
+  img {
+    height: 10em;
+  }
 }

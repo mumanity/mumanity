@@ -9,11 +9,12 @@ body {
 }
 
 .avatar {
-  height: 10em;
-  max-width: 10em;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
   overflow: hidden;
   border: 5px solid $primary;
+  margin: 0 auto;
 
   img {
     height: 10em;

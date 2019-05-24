@@ -16,5 +16,13 @@ export const PROJECTS: Array<Project> = [
         tags: ['ruby', 'cli', 'md', 'gem'],
         createdDate: new Date,
         description: 'CLI built using Ruby to access Google Translation API... because languages are cool.'
+    },
+    {
+        gitHub: 'https://github.com/mumanity/tour-of-unicorns',
+        icon: 'unicorns.gif',
+        title: 'Tour of Unicorns',
+        tags: ['angular', 'cli'],
+        createdDate: new Date,
+        description: 'Decided to play around with Tour of Heroes again and realized my need for a unicorn collection.'
     }
 ]

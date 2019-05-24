@@ -1,23 +1,21 @@
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
-html {
-  background-image: url("/assets/space.jpg");
-
-}
 body {
-  background: #000000a8;
+    background-image: url("/assets/space.jpg");
 }
 
-* {
-  color: #cacaca;
-}
 .avatar {
   height: 10em;
   max-width: 10em;
   border-radius: 50%;
   overflow: hidden;
+  border: 5px solid $primary;
 
   img {
     height: 10em;
   }
+}
+
+.avatar:hover {
+  border: 5px solid $secondary;
 }

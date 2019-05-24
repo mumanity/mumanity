@@ -6,13 +6,21 @@ import { AppComponent } from './app.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { BlogComponent } from './blog/blog.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { SiteToDosComponent } from './site-to-dos/site-to-dos.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProjectsComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    BlogComponent,
+    AboutMeComponent,
+    SiteToDosComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,

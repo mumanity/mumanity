@@ -15,4 +15,6 @@ export class ProjectsComponent implements OnInit {
   ngOnInit() {
   }
 
+  // need a function for a random length
+
 }

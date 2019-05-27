@@ -2,15 +2,15 @@
   <div class="col-sm-12 col-md-6">
     <div class="form-group">
       <label for="postTitle">Title</label>
-      <input id="postTitle" name="postTitle" class="form-control" />
+      <input id="postTitle" name="postTitle" [(ngModel)]="createdTitle" class="form-control" />
     </div>
   </div>
   <div class="col-sm-12">
-    <ckeditor [editor]="Editor" data="" ></ckeditor>
-
-    <!-- <ckeditor [editor]="Editor" data="<p>Hello, world!</p>" [(ngModel)]="model.editorData"></ckeditor> -->
+    <ckeditor [editor]="Editor" [(ngModel)]="ckPost.editorData"></ckeditor>
   </div>
-  <!-- <div class="col-md-12">
-    need to setup an upload for banner image
-  </div> -->
+  <div class="col-sm-12">
+    <button type="button" (click)="createPost()" class="btn btn-primary mt-3">
+      Save Post
+    </button>
+  </div>
 </div>

@@ -9,9 +9,9 @@
         </em>
       </div>
     </div>
-    <p>{{post.content}}</p>
+    <div [innerHTML]="post.content"></div>
   </div>
-  <div class="col-md-12 text-right">
+  <div class="col-md-12 mt-3">
     <a routerLink="/blog">Back</a>
   </div>
 </div>

@@ -23,4 +23,8 @@ export class BlogService {
     return this.post;
   }
 
+  createPost(post): void {
+    BLOGS.push(post);
+  }
+
 }

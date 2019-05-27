@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { BlogComponent } from './blog/blog.component';
+import { BlogIndexComponent } from './blog/index/index.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SiteToDosComponent } from './site-to-dos/site-to-dos.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { CreateComponent } from './blog/create/create.component';
+import { PostComponent } from './blog/post/post.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +19,12 @@ import { WelcomeComponent } from './welcome/welcome.component';
     ProjectsComponent,
     HeaderComponent,
     FooterComponent,
-    BlogComponent,
+    BlogIndexComponent,
     AboutMeComponent,
     SiteToDosComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    CreateComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,

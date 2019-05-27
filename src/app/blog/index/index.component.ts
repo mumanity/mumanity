@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Blog } from '../blog';
+import { Post } from '../post/post';
+import { BlogService } from '../blog.service';
 import { BLOGS } from '../mock.blogs';
 
 @Component({
@@ -7,18 +8,33 @@ import { BLOGS } from '../mock.blogs';
   templateUrl: './index.component.html',
   styleUrls: ['./index.component.scss']
 })
-  
-export class BlogIndexComponent implements OnInit {
 
-  posts: Array<Blog> = BLOGS;
-  
-  constructor() { }
+export class BlogIndexComponent implements OnInit {
+  blogs: Array<Post>;
+  post: Post;
+
+  // posts: Array<Post> = BLOGS;
+
+  constructor(private blogService: BlogService) {
+    this.getBlogs();
+  }
 
   ngOnInit() {
   }
 
-  select(post) {
-    console.log('post', post);
+  getBlogs(): void {
+    // this.blogs = this.blogService.getBlogs();
+    this.blogs = BLOGS;
   }
+
+  getPost() { }
+
+  setPost(post: Post): void {
+    this.blogService.setPost(post);
+  }
+
+  createPost() { }
+
+  deletePost() { }
 
 }

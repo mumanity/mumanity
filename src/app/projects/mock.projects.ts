@@ -6,7 +6,7 @@ export const PROJECTS: Array<Project> = [
         icon: 'bananapocalypse.gif',
         title: 'Bananapocalypse',
         tags: ['js', 'javascript', 'phaser'],
-        createdDate: new Date,
+        createdDate: 'Sat, 28 Jun 2014 01:41:35 +0000',
         description: 'First major JavaScript project. Created an HTML5 game about my distaste for bananas and empathy for the dinosaurs who died by them.'
     },
     {
@@ -14,7 +14,7 @@ export const PROJECTS: Array<Project> = [
         icon: 'translatinator.gif',
         title: 'Translatinator',
         tags: ['ruby', 'cli', 'md', 'gem'],
-        createdDate: new Date,
+        createdDate: '2014-05-02 02:48:23',
         description: 'CLI built using Ruby to access Google Translation API... because languages are cool.'
     },
     {
@@ -22,7 +22,7 @@ export const PROJECTS: Array<Project> = [
         icon: 'unicorns.gif',
         title: 'Tour of Unicorns',
         tags: ['angular', 'cli'],
-        createdDate: new Date,
+        createdDate: '2019-05-22',
         description: 'Decided to play around with Tour of Heroes again and realized my need for a unicorn collection.'
     }
 ]

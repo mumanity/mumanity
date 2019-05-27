@@ -1,11 +1,17 @@
-<p>Still working on it...</p>
-<div class="row"
-ngModel>
+<div class="row">
   <div class="col-md-12">
-    <h1>{{post.title}}</h1>  
-    <em><p>{{post.date}}</p></em>
-    <img src="" alt="" title=""/>
-    <p>{{post.content}}</p>
-    <p>{{post.content}}</p>
+    <div class="banner">
+      <img src="../../../assets/{{post.img}}" />
+      <div class="title-box">
+        <h1>{{post.title}}</h1>
+        <em>
+          <p>{{post.date | date: short}}</p>
+        </em>
+      </div>
     </div>
+    <p>{{post.content}}</p>
+  </div>
+  <div class="col-md-12 text-right">
+    <a routerLink="/blog">Back</a>
+  </div>
 </div>

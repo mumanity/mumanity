@@ -3,6 +3,6 @@ export class Project {
     icon: string;
     title: string;
     tags: Array<string>;
-    createdDate: Date;
+    createdDate: string;
     description: string;
 }

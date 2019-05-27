@@ -12,6 +12,7 @@ import { SiteToDosComponent } from './site-to-dos/site-to-dos.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { CreateComponent } from './blog/create/create.component';
 import { PostComponent } from './blog/post/post.component';
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
 @NgModule({
   declarations: [
@@ -28,9 +29,11 @@ import { PostComponent } from './blog/post/post.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CKEditorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+  
 export class AppModule { }

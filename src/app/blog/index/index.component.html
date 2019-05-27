@@ -2,8 +2,10 @@
   <div class="col-12">
     <h2>Blog</h2>
   </div>
-  <div class="col-12" *ngFor="let post of posts">
-    <a routerLink="/post/{{post.id}}" (click)="select(post)">{{post.name}}</a>
-    <p>{{post.date}}</p>
+  <div class="col-12" *ngFor="let post of blogs">
+    <a routerLink="/post/{{post.id}}" (click)="setPost(post)">{{post.title}}</a>
+    <p><small>{{post.date | date: short}}</small></p>
   </div>
 </div>
+<hr>
+<app-create></app-create>

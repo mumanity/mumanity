@@ -1,6 +1,6 @@
-export class Blog {
+export class Post {
     id: number;
-    name: string;
+    title: string;
     content: string;
     img: string;
     date: Date;

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BlogIndexComponent } from './index/index.component';
 import { CreateComponent } from './create/create.component';
 import { PostComponent } from './post/post.component';
+import { BlogService } from './blog.service';
 
 @NgModule({
   declarations: [
@@ -12,10 +13,9 @@ import { PostComponent } from './post/post.component';
   ],
   imports: [
     CommonModule
+  ],
+  providers: [
+    BlogService
   ]
-  // ,
-  // providers: [
-  //   PUT SERVICES IN HERE!
-  // ]
 })
 export class BlogModule { }

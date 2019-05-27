@@ -1,0 +1,19 @@
+.banner {
+  overflow: hidden;
+  position: relative;
+  height: 250px;
+  margin-bottom: 20px;
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+    bottom: -50%;
+  }
+
+  .title-box {
+    position: relative;
+    margin: 150px 20px 0px 20px;
+  }
+}

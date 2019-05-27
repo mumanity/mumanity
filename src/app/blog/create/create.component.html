@@ -1,3 +1,16 @@
-<p>
-  create works!
-</p>
+<div class="row">
+  <div class="col-sm-12 col-md-6">
+    <div class="form-group">
+      <label for="postTitle">Title</label>
+      <input id="postTitle" name="postTitle" class="form-control" />
+    </div>
+  </div>
+  <div class="col-sm-12">
+    <ckeditor [editor]="Editor" data="" ></ckeditor>
+
+    <!-- <ckeditor [editor]="Editor" data="<p>Hello, world!</p>" [(ngModel)]="model.editorData"></ckeditor> -->
+  </div>
+  <!-- <div class="col-md-12">
+    need to setup an upload for banner image
+  </div> -->
+</div>

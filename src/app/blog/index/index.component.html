@@ -4,7 +4,7 @@
   </div>
   <div class="col-12" *ngFor="let post of blogs">
     <a routerLink="/post/{{post.id}}" (click)="setPost(post)">{{post.title}}</a>
-    <p><small>{{post.date | date: short}}</small></p>
+    <p><small>{{post.date | date: 'mediumDate'}}</small></p>
   </div>
 </div>
 <hr>

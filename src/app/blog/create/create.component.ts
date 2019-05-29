@@ -26,13 +26,12 @@ export class CreateComponent implements OnInit {
   createPost(): void {
     // id will be handled in DB
     // date might be too
-    let tempDate = new Date();
     let creation: Post = {
       id: 11,
       title: this.createdTitle,
       content: this.ckPost.editorData,
       img: '', 
-      date: tempDate.toString()
+      date: new Date()
     }
     this.blogService.createPost(creation);
     this.ckPost = null;

@@ -3,6 +3,6 @@ export class Post {
     title: string;
     content: string;
     img: string;
-    date: string;
+    date: Date;
     comments?: Array<Comment>;
 }

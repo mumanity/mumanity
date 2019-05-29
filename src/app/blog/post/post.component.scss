@@ -8,11 +8,13 @@
     position: absolute;
     width: auto;
     height: auto;
+    min-height: 250px;
     opacity: 0.4;
     top: 0;
-    height: auto;
-    min-height: 250px;
     left: 0;
   }
 
+  .title-box {
+    position: relative;
+  }
 }

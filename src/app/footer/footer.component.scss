@@ -1,11 +1,12 @@
 .footer {
-  padding: 3em 0 2em 0;
+  padding: 0 0 2em 0;
   font-size: 0.7em;
   color: #fff;
+  margin-top: -2px;
 
   .pixels {
     background-image: url('../../assets/pixels.png');
-    height: 100px;
+    height: 70px;
     background-repeat: repeat-x;
   }
   

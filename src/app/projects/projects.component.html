@@ -7,7 +7,9 @@
     <div class="row mt-3 mb-3">
       <div class="col-sm-12 col-md-4 col-lg-2">
         <div class="avatar">
-          <img src="../../assets/{{project.icon}}" alt="{{project.title}}" title="{{project.title}}" />
+          <a href="{{project.activeLink || project.gitHub}}" target="_new">
+            <img src="../../assets/{{project.icon}}" alt="{{project.title}}" title="{{project.title}}" />
+          </a>
         </div>
       </div>
       <div class="col-sm-12 col-md-8 col-lg-10">

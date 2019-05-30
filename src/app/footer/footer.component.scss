@@ -3,13 +3,18 @@
   font-size: 0.7em;
   color: #fff;
 
+  .pixels {
+    background-image: url('../../assets/pixels.png');
+    height: 100px;
+    background-repeat: repeat-x;
+  }
+  
   a {
     color: #fff;
     font-weight: bold;
   }
 
   p {
-
     img {
       height: 20px;
       margin-top: -3px;

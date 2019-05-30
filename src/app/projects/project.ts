@@ -5,4 +5,5 @@ export class Project {
     tags: Array<string>;
     createdDate: string;
     description: string;
+    activeLink?: string;
 }

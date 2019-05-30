@@ -7,7 +7,8 @@ export const PROJECTS: Array<Project> = [
         title: 'Bananapocalypse',
         tags: ['js', 'javascript', 'phaser'],
         createdDate: 'Sat, 28 Jun 2014 01:41:35 +0000',
-        description: 'First major JavaScript project. Created an HTML5 game about my distaste for bananas and empathy for the dinosaurs who died by them.'
+        description: 'First major JavaScript project. Created an HTML5 game about my distaste for bananas and empathy for the dinosaurs who died by them.',
+        activeLink: 'http://bananapocalypse.emilydodds.com/'
     },
     {
         gitHub: 'https://github.com/mumanity/translatinator',

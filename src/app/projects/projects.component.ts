@@ -7,13 +7,16 @@ import { PROJECTS } from './mock.projects';
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss']
 })
-  
+
 export class ProjectsComponent implements OnInit {
   projects: Array<Project> = PROJECTS;
-  
+
   constructor() { }
 
   ngOnInit() {
+    this.projects = this.projects.sort((a, b) => {
+      return b.createdDate.getTime() - a.createdDate.getTime();
+    });
   }
 
   // need a function for a random length

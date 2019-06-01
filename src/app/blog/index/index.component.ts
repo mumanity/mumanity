@@ -16,15 +16,17 @@ export class BlogIndexComponent implements OnInit {
   // posts: Array<Post> = BLOGS;
 
   constructor(private blogService: BlogService) {
-    this.getBlogs();
   }
 
   ngOnInit() {
+    this.getBlogs();
   }
 
   getBlogs(): void {
     // this.blogs = this.blogService.getBlogs();
-    this.blogs = BLOGS;
+    this.blogs = BLOGS.sort((a, b) => {
+      return b.createdDate.getTime() - a.createdDate.getTime();
+    });
   }
 
   getPost() { }

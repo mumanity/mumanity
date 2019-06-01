@@ -31,7 +31,7 @@ export class CreateComponent implements OnInit {
       title: this.createdTitle,
       content: this.ckPost.editorData,
       img: '', 
-      date: new Date()
+      createdDate: new Date()
     }
     this.blogService.createPost(creation);
     this.ckPost = null;

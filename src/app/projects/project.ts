@@ -3,7 +3,7 @@ export class Project {
     icon: string;
     title: string;
     tags: Array<string>;
-    createdDate: string;
+    createdDate: Date;
     description: string;
     activeLink?: string;
 }

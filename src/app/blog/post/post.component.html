@@ -2,7 +2,7 @@
   <div class="col-md-12"
   *ngIf="post">
     <div class="banner">
-      <img src="../../../assets/blogs/{{post.img}}"/>
+      <img src="/assets/blogs/{{post.img}}" alt="{{post.title}}" title="{{post.title}}"/>
       <div class="title-box">
         <h1>{{post.title}}</h1>
         <em>
@@ -20,5 +20,4 @@
   <div class="col-md-12 mt-3">
     <a routerLink="/blog">Back to Blogs</a>
   </div>
-
 </div>

@@ -15,13 +15,13 @@ export const BLOGS: Array<Post> = [
         img: 'bananasaur.png',
         createdDate: new Date('Wed May 29 2019 23:41:18 GMT-0500 (Central Daylight Time)')
     },
-    // {
-    //     id: 2,
-    //     title: "It's Really Just a Jake Thing",
-    //     content: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?',
-    //     img: 'blog2test.png',
-    //     date: new Date
-    // },
+    {
+        id: 3,
+        title: "SSLeave Me Alone!",
+        content: `<p>This site now brought to you with 0 security warnings!! ...unless you're running on a browser that doesn't support SNI, and if that's the case may the internet Gods be with you... because I'm not.&nbsp;</p><p>Anyhoo! I don't think I've ever had to be the one to get the SSL certs working on a site before so that was a challenge of unnecessary proportions. Going from "<i>Where do I buy a cert?</i>" to "<i>OMG WHY IS THE SITE NOT WORKING?!?!</i>" has been quite the ride. The very very frustrating ride.</p><p>Low and behold it wasn't my Angular app. It wasn't my SSL Cert.&nbsp;</p><p>It was, in fact, everyone's favorite - caching. This time it came from the server. Yeah... that was an ordeal and I don't care to talk about it any further.&nbsp;</p><div class="text-center"><img src="/assets/blogs/kahn.gif" width="100%" title="kahn" alt="kahn"/></div>`,
+        img: 'ssl.jpg',
+        createdDate: new Date('Sun Jun 02 2019 11:39:21 GMT-0500 (Central Daylight Time)')
+    }
     // {
     //     id: 3,
     //     title: 'test 3',

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Post } from '../post/post';
 import { BlogService } from '../blog.service';
-import { BLOGS } from '../mock.blogs';
 
 @Component({
   selector: 'app-blog-index',
@@ -10,33 +9,23 @@ import { BLOGS } from '../mock.blogs';
 })
 
 export class BlogIndexComponent implements OnInit {
-  blogs: Array<Post>;
+  blogs: Post[];
   post: Post;
-
-  // posts: Array<Post> = BLOGS;
 
   constructor(private blogService: BlogService) {
   }
 
   ngOnInit() {
-    this.getBlogs();
+    this.setBlogs();
   }
 
-  getBlogs(): void {
-    // this.blogs = this.blogService.getBlogs();
-    this.blogs = BLOGS.sort((a, b) => {
-      return b.createdDate.getTime() - a.createdDate.getTime();
-    });
+  setBlogs() {
+    this.blogService.getBlogs()
+      .subscribe(blogs => this.blogs = blogs);
   }
-
-  getPost() { }
 
   setPost(post: Post): void {
     this.blogService.setPost(post);
   }
-
-  createPost() { }
-
-  deletePost() { }
 
 }

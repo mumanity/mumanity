@@ -6,20 +6,27 @@ import { Observable, of } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
+  
 export class BlogService {
   post: Post;
 
   constructor() { }
 
-  // getBlogs(): Observable<Post> {
-  //   return of(BLOGS);
-  // }
+  getBlogs(): Observable<Post[]> {
+    return of(BLOGS);
+  }
 
   setPost(post): void {
     this.post = post;
    }
 
-  getPost(): Post { 
+  getPost(id): Post { 
+    BLOGS.forEach((blog) => {
+      if (blog.id === Number(id)) {
+        this.post = blog;
+        return;
+      } 
+    })
     return this.post;
   }
 
